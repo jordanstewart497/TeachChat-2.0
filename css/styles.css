@@ -61,6 +61,12 @@
     color: white;
 }
 
+.jumbotron #para label {
+  color: white;
+  font-size: 150%;
+  font-weight: lighter;
+}
+
   .nav {
       padding: 14px 24px;
       border: 0 none;
@@ -120,10 +126,13 @@ fieldset tr td{
   color: white;
 }
 
+fieldset tr td input{
+  color: black;
+}
+
 fieldset legend{
   color: white;
 }
-
 
 #back {
   background-image: url(../img/hand_holding_phone2.png);
