@@ -1,203 +1,207 @@
   body {
-      background: linear-gradient(to bottom right, rgb(105, 193, 127), rgb(66, 126, 82));
-      /* Standard syntax */
-      height: 100%;
-      margin: 0;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+    background: linear-gradient(to bottom right, rgb(105, 193, 127), rgb(66, 126, 82));
+    /* Standard syntax */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   h1 {
-      color: white;
+    color: white;
   }
-  h3{
+
+  h3 {
     color: white;
     font-size: 30px;
   }
-  h4{
-    color: white;
 
-  }
-
-  address{
+  h4 {
     color: white;
   }
-#head h3{
+
+  address {
+    color: white;
+  }
+
+  #head h3 {
     padding-top: 80px;
     color: white;
     font-size: 30px;
   }
 
-
   li a {
     color: white;
   }
 
-  ul li{
+  ul li {
     color: white;
   }
-  p{
+
+  p {
     color white;
   }
 
-#head p{
-  color: white;
-  font-size: 20px;
-}
-
-.jumbotron{
-  background-color: #336a41;
-  border-radius: 50px 50px;
-}
-
-.jumbotron h1 {
+  #head p {
     color: white;
-}
-.jumbotron #para p {
-    color: white;
-}
+    font-size: 20px;
+  }
 
-.jumbotron #para a {
-    color: white;
-}
+  .jumbotron {
+    background-color: #336a41;
+    border-radius: 50px 50px;
+  }
 
-.jumbotron #para label {
-  color: white;
-  font-size: 150%;
-  font-weight: lighter;
-}
+  .jumbotron h1 {
+    color: white;
+  }
+
+  .jumbotron #para p {
+    color: white;
+  }
+
+  .jumbotron #para a {
+    color: white;
+  }
+  .jumbotron #question {
+    color: white;
+    font-weight: bold;
+  }
+
+  .jumbotron #para label {
+    color: white;
+    font-size: 150%;
+    font-weight: lighter;
+    padding-right: 10px;
+  }
 
   .nav {
-      padding: 14px 24px;
-      border: 0 none;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   .nav:focus, .nav:active:focus, .nav.active:focus {
-      outline: 0 none;
+    outline: 0 none;
   }
 
   .navbar-btn:active, .navbar-btn.active {
-      box-shadow: none;
+    box-shadow: none;
   }
 
-  #carousel-example-generic{
-
-  }
+  #carousel-example-generic {}
 
   .footer {
-      bottom: 0;
-      color: black;
-      background-color: rgb(92, 207, 121);
-      height: 2em;
-      left: 0;
-      right: 0;
-      position: fixed;
-      font-size: small;
-      width: 100%;
-      text-align: center;
+    bottom: 0;
+    color: black;
+    background-color: rgb(92, 207, 121);
+    height: 2em;
+    left: 0;
+    right: 0;
+    position: fixed;
+    font-size: small;
+    width: 100%;
+    text-align: center;
   }
 
   #Logo {
-      position: absolute;
-      left: 100px;
-      top: 0px;
-      z-index: -1;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    z-index: -1;
   }
 
   button {
-      border: none;
-      border-radius: 5px;
-      color: white;
-      text-shadow: black 4px 4px 3px display: inline;
-      font-size: 20px;
-      background-color: rgb(90, 183, 100);
-      text-decoration: none;
-      box-shadow: green 5px 5px 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-shadow: black 4px 4px 3px display: inline;
+    font-size: 20px;
+    background-color: rgb(90, 183, 100);
+    text-decoration: none;
+    box-shadow: green 5px 5px 5px;
   }
 
-table tr td{
-  color: white;
-}
-
-fieldset tr td{
-  color: white;
-}
-
-fieldset tr td input{
-  color: black;
-}
-
-fieldset legend{
-  color: white;
-}
-
-#back {
-  background-image: url(../img/hand_holding_phone2.png);
-  border-radius: 50px 50px;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 1100px;
-}
-#back2 {
-  background-image: url(../img/widescreenImage2.png);
-  border-radius: 50px 50px;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 1100px;
-}
-
-#back3 {
-  width: 1100px;
-}
-
-
-#back4 {
-  background-image: url(../img/widescreenImage3.png);
-  border-radius: 50px 50px;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 1100px;
-}
-
-#back4 h3{
-  margin-left: 30px;
-}
-
-#back4 h4{
-  padding-top: 80px;
-  color: white;
-  font-size: 30px;
-}
-
-
-
-
-#grien{
-  padding-left: 90px;
-}
-
-#grien #dlbutton a{
-  padding-left: 40px;
-}
-.marketing{
-margin-left: 20px;
-}
-
-.marketing a{
+  table tr td {
     color: white;
-}
+  }
 
-.marketing p, .marketing h5{
-  color: white;
-}
+  fieldset tr td {
+    color: white;
+  }
+
+  fieldset tr td input {
+    color: black;
+  }
+
+  fieldset legend {
+    color: white;
+  }
+
+  #back {
+    background-image: url(../img/hand_holding_phone2.png);
+    border-radius: 50px 50px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1100px;
+  }
+
+  #back2 {
+    background-image: url(../img/widescreenImage2.png);
+    border-radius: 50px 50px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1100px;
+  }
+
+  #back3 {
+    width: 1100px;
+  }
+
+  #back4 {
+    background-image: url(../img/widescreenImage3.png);
+    border-radius: 50px 50px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1100px;
+  }
+
+  #back4 h3 {
+    margin-left: 30px;
+  }
+
+  #back4 h4 {
+    padding-top: 80px;
+    color: white;
+    font-size: 30px;
+  }
+
+  #grien {
+    padding-left: 90px;
+  }
+
+  #grien #dlbutton a {
+    padding-left: 40px;
+  }
+
+  .marketing {
+    margin-left: 20px;
+  }
+
+  .marketing a {
+    color: white;
+  }
+
+  .marketing p, .marketing h5 {
+    color: white;
+  }
 
   #text_about {
-      color: white;
+    color: white;
   }
 
   #text_about h4 {
-      color: darkwhite;
+    color: darkwhite;
   }

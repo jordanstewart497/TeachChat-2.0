@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>TeachChat - Donation</title>
-  <script src="js/script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <script src="js/bootstrap.js" type="text/javascript"></script>
   <script src="js/functions.js"></script>
 
@@ -30,75 +32,153 @@
       </nav>
       <h1>TeachChat<img src="img/Redesign/LogoTC-Trans.png" width="55px" height="55px"></h1>
     </div>
-    <div class="jumbotron">
-      <h1>Donation</h1>
-      <br>
-      <div id="para" class="">
-        <h3>Amount</h3>
-        <p>Would you like to donate?</p>
-        <input id="fifty" type="radio" name="money" value="Fifty">
-        <label for="fifty">$50</label>
-        <input id="hundred" type="radio" name="money" value="Hundred">
-        <label for="hundred">$100</label>
-        <input id="onefifty" type="radio" name="money" value="OneFifty">
-        <label for="onefifty">$150</label>
-        <input id="twohundred" type="radio" name="money" value="TwoHundred">
-        <label for="twohundred">$200</label>
-      </div>
-      <div id="para">
-        <h3>Card Information</h3>
-      </div>
-      <div id="para" class="">
-        <h3>Donations</h3>
-        <p>If you would like to invest <b> contact us</b> <a href="#">teachsupport@chat.com</a></p>
-      </div>
-      <div>
-        <fieldset>
-          <legend>Enter your Contact Information</legend>
-          <table>
-            <tr>
-              <td class="labelcell" onsubmit="return checkForm2();">First Name<span style="color: red">* </span></td>
-              <td class="inputcell2">
-                <input class="text" name="fname" id="fname" size="25" />
-              </td>
-            </tr>
-            <tr>
-              <td class="labelcell" onsubmit="return checkForm2();">Last Name<span style="color: red">* </span></td>
-              <td class="inputcell2">
-                <input class="text" name="lname" id="lname" size="25" />
-              </td>
-            </tr>
-
-            <tr>
-              <td class="labelcell" onsubmit="return checkForm2();">Email<span style="color: red">* </span></td>
-              <td class="inputcell2">
-                <input class="text" name="lname" id="lname" size="25" />
-              </td>
-            </tr>
-
-          </table>
-          <br>
-          <button type="submit" name="button">Submit</button>
+    <form class="" action="results.html" method="post">
+      <div class="jumbotron">
+        <h1>Donation</h1>
+        <p id="question">Would you like to donate?</p>
+        <fieldset id="donation">
+          <div id="para" class="">
+            <h3><u>Amount</u></h3>
+            <input id="cash1" type="radio" name="money" value="Cash1">
+            <label for="cash1">$20</label>
+            <input id="cash2" type="radio" name="money" value="Cash2">
+            <label for="cash2">$40</label>
+            <input id="cash3" type="radio" name="money" value="Cash3">
+            <label for="cash3">$80</label>
+            <input id="cash4" type="radio" name="money" value="Cash4">
+            <label for="cash4">$120</label><br>
+            <input id="other" type="radio" name="money" value="Other">
+            <label for="other">Other: $</label>
+            <input id="amount" type="number" name="money" value="">
+          </div>
         </fieldset>
-      </div>
-      <br>
-      <h4>Company's Address</h4>
-      <address class="">
-              221 E INDIANOLA AVE
-              <br>
-              Phoenix, Arizona
-              <br>
-              United States of America
-            </address>
-    </div>
+        <fieldset id="cardinfo">
+          <div id="para">
+            <h3><u>Card Information</u></h3>
+            <input id="visa" name="PaymentType" type="radio" value="Visa" />
+            <label for="visa">Visa</label>
+            <input id="mc" name="PaymentType" type="radio" value="MC" />
+            <label for="mc">Master Card</label>
+            <input id="discover" name="PaymentType" type="radio" value="Discover" />
+            <label for="discover">Discover</label>
+            <input id="amex" name="PaymentType" type="radio" value="AmEx" />
+            <label for="amex">American Express</label>
+          </div>
+          <div id="para">
+            <label for="ccNum">Card Number<span style="color: red">*</span></label>
+            <input id="ccNum" name="CardNumber" type="number" required="required" />
+            <div id="ccNumErrorMessage"></div>
+          </div>
+          <div id="para">
+            <label for="para">Expiration<span style="color: red">*</span></label>
+            <select id="expMo" name="ExpMonth" required="required">
+             <option value="01">01</option>
+             <option value="02">02</option>
+             <option value="03">03</option>
+             <option value="04">04</option>
+             <option value="05">05</option>
+             <option value="06">06</option>
+             <option value="07">07</option>
+             <option value="08">08</option>
+             <option value="09">09</option>
+             <option value="10">10</option>
+             <option value="11">11</option>
+             <option value="12">12</option>
+          </select>
+            <select id="expYr" name="ExpYear" required="required">
+             <option value="2017">2017</option>
+             <option value="2018">2018</option>
+             <option value="2019">2019</option>
+             <option value="2020">2020</option>
+             <option value="2021">2021</option>
+          </select>
+          </div>
+          <div id="para">
+            <label for="para">Security Code<span style="color: red">*</span></label>
+            <input type="number" name="SecurCode" value="" required="required">
+          </div>
+        </fieldset>
+        <fieldset id="contactinfo">
+          <div id="para">
+            <h3><u>Contact Information</u></h3>
+            <label for="para">First Name<span style="color: red">*</span></label>
+            <input type="text" name="fname" value=""><br>
+            <label for="para">Middle Name</label>
+            <input type="text" name="mname" value=""><br>
+            <label for="para">Last Name<span style="color: red">*</span></label>
+            <input type="text" name="lname" value=""><br>
+            <label for="para">Address<span style="color: red">*</span></label>
+            <input type="text" name="address" value=""><br>
+            <label for="para">State<span style="color: red">*</span></label>
+            <select name="HomeState" required="required">
+                 <option value="AL">AL</option>
+                 <option value="AK">AK</option>
+                 <option value="AZ">AZ</option>
+                 <option value="AR">AR</option>
+                 <option value="CA">CA</option>
+                 <option value="CO">CO</option>
+                 <option value="CT">CT</option>
+                 <option value="DE">DE</option>
+                 <option value="DC">DC</option>
+                 <option value="FL">FL</option>
+                 <option value="GA">GA</option>
+                 <option value="HI">HI</option>
+                 <option value="ID">ID</option>
+                 <option value="IL">IL</option>
+                 <option value="IN">IN</option>
+                 <option value="IA">IA</option>
+                 <option value="KS">KS</option>
+                 <option value="KY">KY</option>
+                 <option value="LA">LA</option>
+                 <option value="ME">ME</option>
+                 <option value="MD">MD</option>
+                 <option value="MA">MA</option>
+                 <option value="MI">MI</option>
+                 <option value="MN">MN</option>
+                 <option value="MS">MS</option>
+                 <option value="MO">MO</option>
+                 <option value="MT">MT</option>
+                 <option value="NE">NE</option>
+                 <option value="NV">NV</option>
+                 <option value="NH">NH</option>
+                 <option value="NJ">NJ</option>
+                 <option value="NM">NM</option>
+                 <option value="NY">NY</option>
+                 <option value="NC">NC</option>
+                 <option value="ND">ND</option>
+                 <option value="OH">OH</option>
+                 <option value="OK">OK</option>
+                 <option value="OR">OR</option>
+                 <option value="PA">PA</option>
+                 <option value="RI">RI</option>
+                 <option value="SC">SC</option>
+                 <option value="SD">SD</option>
+                 <option value="TN">TN</option>
+                 <option value="TX">TX</option>
+                 <option value="UT">UT</option>
+                 <option value="VT">VT</option>
+                 <option value="VA">VA</option>
+                 <option value="WA">WA</option>
+                 <option value="WV">WV</option>
+                 <option value="WI">WI</option>
+                 <option value="WY">WY</option>
+              </select><br>
+            <label for="para">Zip Code<span style="color: red">*</span></label>
+            <input type="text" name="zipcode" value=""><br>
+            <br>
+            <button type="submit" name="button">Submit</button>
+          </div>
+        </fieldset>
+        <br>
+    </form>
 
     <footer class="footer">
       <p>&copy; 2017 TeachChat</p>
     </footer>
-  </div>
-  <!-- /container -->
+    </div>
+    <!-- /container -->
 
-  <br><br><br>
+    <br><br><br>
 </body>
 
 </html>
