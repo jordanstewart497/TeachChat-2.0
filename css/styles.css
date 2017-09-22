@@ -120,6 +120,18 @@ fieldset tr td{
   color: white;
 }
 
+fieldset tr td input{
+  color: black;
+}
+fieldset tr td select {
+  color: black;
+}
+
+fieldset span div {
+  background-color: rgb(0, 150, 0);
+  width:420px;
+}
+
 fieldset legend{
   color: white;
 }
