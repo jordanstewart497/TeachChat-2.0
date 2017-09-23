@@ -38,34 +38,36 @@
                     <table>
                       <span style="color: red;" ><div id="errorText"></div></span>
                         <tr>
-                            <td class="labelcell">First Name <span style="color: red">*</span></td>
-                            <td class="inputcell2">
-                                <input class="text" name="fname" id="fname" size="20" />
+                            <td>First Name <span style="color: red">*</span></td>
+                            <td>
+                                <input class="text" name="fname" id="fname" size="25" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="labelcell">Middle Name </td>
-                            <td class="inputcell2">
-                                <input class="text" name="mname" id="mname" size="20" />
+                            <td>Middle Name </td>
+                            <td>
+                                <input class="text" name="mname" id="mname" size="25" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="labelcell">Last Name <span style="color: red">*</span></td>
-                            <td class="inputcell2">
-                                <input class="text" name="lname" id="lname" size="20" />
+                            <td>Last Name <span style="color: red">*</span></td>
+                            <td>
+                                <input class="text" name="lname" id="lname" size="25" />
                             </td>
                         </tr>
 
-                        <tr class="inputcell">
-                            <td class="labelcell">Gender<span style="color: red">*</span></td>
+                        <tr>
+                            <td>Gender<span style="color: red">*</span></td>
+
                             <td><h5>Male <input type="radio" class="ratio" name="gender" id="gender"/></h5></td>
                             <td><h5>Female <input type="radio" class="ratio" name="gender" id="gender"/></h5></td>
+            
                         </tr>
 
                         <tr>
-                          <td class="labelcell">State </td>
-                          <td class="inputcell2">
-                              <select class="inputcell2" name="state">
+                          <td>State </td>
+                          <td>
+                              <select name="state">
                                 <option value="AL">AL</option>
                <option value="AK">AK</option>
                <option value="AZ">AZ</option>
@@ -122,37 +124,55 @@
                         </tr>
 
                     <tr>
-                      <td class="labelcell">Email <span style="color: red">*</span></td>
-                      <td class="inputcell2">
+                      <td>Email <span style="color: red">*</span></td>
+                      <td>
                           <input type="email" class="text" name="email" id="email" size="25" placeholder="example123@outlook.com"/>
                       </td>
                     </tr>
 
                     <tr>
-                      <td class="labelcell">Phone Number </td>
-                      <td class="inputcell2">
-                          <input type="tel" name="pnumber" id="pnumber" placeholder="(nnn) nnn-nnnn" />
+                      <td>Phone Number </td>
+                      <td>
+                          <input type="tel" name="pnumber" id="pnumber" placeholder="(nnn) nnn-nnnn" size="15"/>
                       </td>
                     </tr>
 
                     <tr>
-                        <td class="labelcell">Username<span style="color: red">*</span></td>
-                        <td class="inputcell2">
+                        <td>Username<span style="color: red">*</span></td>
+                        <td>
                             <input type="text" class="text" name="pass1" id="pass1" size="25" />
                         </td>
 
                     <tr>
-                        <td class="labelcell">Password<span style="color: red">*</span></td>
-                        <td class="inputcell2">
+                        <td>Password<span style="color: red">*</span></td>
+                        <td>
                             <input type="password" class="text" name="pass1" id="pass1" size="25" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="labelcell">Password(Re-enter)<span style="color: red">*</span></td>
-                        <td class="inputcell2">
+                        <td>Password(Re-enter)<span style="color: red">*</span></td>
+                        <td>
                             <input type="password" class="text" name="pass2" id="pass2" size="25" />
                         </td>
                     </tr>
+
+                    <tr>
+                      <td>Where did you here about us from?</td>
+                      <td><textarea></textarea></td>
+                    </tr>
+
+                    <tr>
+                      <td style="color:rgba(51,106,65,1)">...</td>
+                    </tr>
+
+                    <tr class="col-md-12">
+                        <td>
+                  <input type="checkbox" name="pass2" id="pass2" />
+                </td>
+                        <td> Check to receive special email offers</td>
+                    </tr>
+
+
 
                     <span style="color: red">* means required</span>
                     </table>
