@@ -140,6 +140,17 @@
     color: white;
   }
 
+  fieldset div.errorMessage {
+     display: none;
+     color: red;
+     margin-top: 10px;
+  }
+  input, label, select, textarea, fieldset p, div .errorMessage, {
+     position: relative;
+     top: 50px;
+     line-height: 1.2em;
+  }
+
   #back {
     background-image: url(../img/hand_holding_phone2.png);
     border-radius: 50px 50px;
