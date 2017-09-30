@@ -68,6 +68,18 @@
     font-weight: bold;
   }
 
+  .jumbotron #errorText {
+     display: none;
+     text-align: center;
+     padding: 10px;
+     margin: 0 auto;
+     margin: 15px 15px 0;
+     font: 20px bold;
+     background: white;
+     color: rgb(255,0,0);
+     border: 2px solid rgb(190,50,38);
+  }
+
   .jumbotron #para label {
     color: white;
     font-size: 150%;
