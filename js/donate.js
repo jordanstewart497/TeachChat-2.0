@@ -181,7 +181,7 @@ function validateContactInfo() {
       document.getElementById("agree").style.outline = ""; // does not have an outline
     }
     if (fieldsetValidity === false) { // What will happen if the fieldsetValidity isn't valid
-      throw "Please insert all of your credit card information"; // throws in the error
+      throw "Please insert all of your contact information"; // throws in the error
     } else { // What will happen if the fieldsetValidity is not false
       errorDiv.style.display = "none"; // does not display the error
       errorDiv.innerHTML = ""; // error is left blank
