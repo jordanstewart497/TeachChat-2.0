@@ -152,7 +152,7 @@
     color: white;
   }
 
-  fieldset div.errorMessage {
+  fieldset div.errorMessage, .errorMessage1 {
      display: none;
      color: red;
      margin-top: 10px;

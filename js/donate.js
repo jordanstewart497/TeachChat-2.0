@@ -54,7 +54,7 @@ function validateAmount() {
 }
 
 function validateOtherAmount() {
-  var errorDiv = document.querySelectorAll("#donation .errorMessage")[0]; // gets the CSS of the element with the donation id to be connected to the errorMessage class
+  var errorDiv = document.querySelectorAll("#donation .errorMessage1")[0]; // gets the CSS of the element with the donation id to be connected to the errorMessage1 class
   var amountBox = document.getElementById("amount"); // amountBox variable gets element that ahs the amount id
   var fieldsetValidity = true; // makes the form valid
   try {
