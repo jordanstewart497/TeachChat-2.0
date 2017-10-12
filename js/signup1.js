@@ -50,6 +50,7 @@ function formValid() {
         fieldsetValidity = false;
       } else {
         currentElement.style.border = "";
+         window.location.href = "thank.html";
       }
     } catch (msg) {
       errorDiv.style.display = "block";
@@ -57,6 +58,10 @@ function formValid() {
       formValidity = false;
     }
   }
+
+  function myFunction() {
+    setInterval(function(){ ; }, 3000);
+}
 
   function validateSelect() {
   // billingAddress
@@ -73,6 +78,7 @@ function formValid() {
         fieldsetValidity = false;
       } else {
         currentElement.style.border = "";
+         window.location.href = "thank.html";
       }
     }
 
